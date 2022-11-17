@@ -1,0 +1,34 @@
+#
+# System
+#
+
+# Logs
+logs/
+*.log
+
+# PIDs
+*.pid
+*.seed
+*.pid.lock
+pids
+
+# File manager configs
+.directory
+Thumbs.db
+.DS_Store
+
+#
+# JavaScript
+#
+
+# NPM / Yarn
+node_modules/
+.npm/
+.yarn-integrity
+
+# npm is the package manager for this project.
+yarn.lock
+
+# Others
+.node_repl_history
+.eslintcache

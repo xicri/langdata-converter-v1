@@ -1,0 +1,20 @@
+{
+  "name": "langdata-converter-v1",
+  "version": "1.0.0",
+  "description": "JSON spec converter for genshin-langdata (v0 → v1)",
+  "author": "Xicri (https://genshin-dictionary.com)",
+  "license": "CC0-1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node main.js",
+    "lint": "eslint --ext=.js,.jsx,.ts,.tsx,.vue,.json ."
+  },
+  "devDependencies": {
+    "eslint-config-xicri": "latest"
+  },
+  "engines": {
+    "node": "18.x",
+    "npm": ">=8.x"
+  }
+}
