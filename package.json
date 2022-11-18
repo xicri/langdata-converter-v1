@@ -10,6 +10,9 @@
     "start": "node main.js",
     "lint": "eslint --ext=.js,.jsx,.ts,.tsx,.vue,.json ."
   },
+  "dependencies": {
+    "json5": "^2.2.1"
+  },
   "devDependencies": {
     "eslint-config-xicri": "latest"
   },
