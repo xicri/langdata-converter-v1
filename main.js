@@ -47,17 +47,13 @@ for (const json5FileName of json5FileNames) {
         },
 
         examples: word.examples?.map(example => ({
-          en: {
-            sentence: example.en,
-          },
-          ja: {
-            sentence: example.ja,
-            ref: example.ref,
-            refURL: example.refURL,
-          },
-          zhCN: {
-            sentence: example.zhCN,
-          },
+          en: example.en,
+          ja: example.ja,
+          zhCN: example.zhCN,
+          refs: [{
+            title: example.ref,
+            url: example.refURL,
+          }],
         })),
 
         tags: word.tags,
