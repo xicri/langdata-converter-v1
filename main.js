@@ -46,17 +46,17 @@ for (const json5FileName of json5FileNames) {
       return removeUndefinedProps({
         slug: word.id,
         en: {
-          translation: splitWithSlash(word.en),
+          word: splitWithSlash(word.en),
           variants: word.variants?.en,
         },
         ja: {
-          translation: splitWithSlash(word.ja),
+          word: splitWithSlash(word.ja),
           kana: splitWithSlash(word.pronunciationJa),
           variants: word.variants?.ja,
           note: word.notes,
         },
         "zh-CN": {
-          translation: splitWithSlash(word.zhCN),
+          word: splitWithSlash(word.zhCN),
           variants: word.variants?.zhCN,
         },
 
