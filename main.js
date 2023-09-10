@@ -29,7 +29,21 @@ for (const json5FileName of json5FileNames) {
         }
       }
 
-      return {
+      function removeUndefinedProps(obj) {
+        const newObj = {};
+
+        Object.keys(obj).forEach((key) => {
+          if (typeof obj[key] === "object") {
+            newObj[key] = removeUndefinedProps(obj[key]);
+          } else if (obj[key] !== undefined) {
+            newObj[key] = obj[key];
+          }
+        });
+
+        return newObj;
+      }
+
+      return removeUndefinedProps({
         slug: word.id,
         en: {
           translation: splitWithSlash(word.en),
@@ -57,7 +71,7 @@ for (const json5FileName of json5FileNames) {
         })),
 
         tags: word.tags,
-      };
+      });
     });
 
   await writeFile(json5Path, JSON5.stringify(words, { space: 2, quote: "\"" }));
