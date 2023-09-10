@@ -57,6 +57,8 @@ for (const json5FileName of json5FileNames) {
         },
         "zh-CN": {
           word: splitWithSlash(word.zhCN),
+          pinyins: word.pinyins,
+          note: word.notesZh,
           variants: word.variants?.zhCN,
         },
 
@@ -71,6 +73,7 @@ for (const json5FileName of json5FileNames) {
         })),
 
         tags: word.tags,
+        _meta: word._meta,
       });
     });
 
