@@ -52,8 +52,8 @@ for (const json5FileName of json5FileNames) {
         ja: {
           word: splitWithSlash(word.ja),
           kana: splitWithSlash(word.pronunciationJa),
-          variants: word.variants?.ja,
           note: word.notes,
+          variants: word.variants?.ja,
         },
         "zh-CN": {
           word: splitWithSlash(word.zhCN),
