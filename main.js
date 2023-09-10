@@ -41,7 +41,7 @@ for (const json5FileName of json5FileNames) {
           variants: word.variants?.ja,
           note: word.notes,
         },
-        zhCN: {
+        "zh-CN": {
           translation: splitWithSlash(word.zhCN),
           variants: word.variants?.zhCN,
         },
@@ -49,7 +49,7 @@ for (const json5FileName of json5FileNames) {
         examples: word.examples?.map(example => ({
           en: example.en,
           ja: example.ja,
-          zhCN: example.zhCN,
+          "zh-CN": example.zhCN,
           refs: [{
             title: example.ref,
             url: example.refURL,
