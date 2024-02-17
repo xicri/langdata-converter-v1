@@ -47,11 +47,14 @@ for (const json5FileName of json5FileNames) {
         slug: word.id,
         en: {
           word: splitWithSlash(word.en),
+          kana: word.enKana,
+          note: word.notesEn,
           variants: word.variants?.en,
         },
         ja: {
           word: splitWithSlash(word.ja),
           kana: splitWithSlash(word.pronunciationJa),
+          kanaConfirmed: word.kanaConfirmed,
           note: word.notes,
           variants: word.variants?.ja,
         },
